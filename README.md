@@ -2,6 +2,12 @@
 
 This Visual Studio Code extension simplifies the process of creating and managing iOS projects. It automates the generation of initial project files, the creation of an Xcode project using [XcodeGen](https://github.com/yonaskolb/XcodeGen), and the setup of debugging configurations for iOS development.
 
+<br>
+<img src="./images/generate-project.gif" alt="Generating project.yml" width="600"/>
+<br><br>
+<img src="./images/build-project.gif" alt="Building project" width="600"/>
+
+
 ## Features
 
 - **Create New iOS Projects**: Easily set up a new project with predefined `launch.json` and `project.yml` files.
