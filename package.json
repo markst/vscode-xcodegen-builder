@@ -35,6 +35,7 @@
     "xcodegen": "xcodegen"
   },
   "devDependencies": {
+    "@expo/xcodegen": "^2.18.0-patch.1",
     "@types/js-yaml": "^4.0.9",
     "@types/mocha": "^10.0.6",
     "@types/node": "18.x",
@@ -44,7 +45,6 @@
     "@vscode/test-cli": "^0.0.4",
     "@vscode/test-electron": "^2.3.8",
     "eslint": "^8.56.0",
-    "typescript": "^5.3.3",
-    "xcodegen": "^2.2.0"
+    "typescript": "^5.3.3"
   }
 }
