@@ -46,5 +46,8 @@
     "@vscode/test-electron": "^2.3.8",
     "eslint": "^8.56.0",
     "typescript": "^5.3.3"
-  }
+  },
+  "extensionDependencies": [
+    "nisargjhaveri.ios-debug"
+  ]
 }
