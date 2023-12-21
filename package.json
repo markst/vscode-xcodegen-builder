@@ -14,8 +14,12 @@
   "contributes": {
     "commands": [
       {
-        "command": "xcodegen-builder.helloWorld",
-        "title": "Hello World"
+        "command": "xcodegenbuilder.generate-project",
+        "title": "XcodeGen - Genereate project"
+      },
+      {
+        "command": "xcodegenbuilder.generate-launch",
+        "title": "XcodeGen - Genereate launch.json"
       }
     ]
   },
