@@ -61,7 +61,7 @@ struct Application: App {
           program: `~/Library/Developer/Xcode/DerivedData/${appName}/Build/Products/Debug-\${command:ios-debug.targetSdk}/${appName}.app`,
           iosBundleId: `${bundleIdPrefix}.${appName}`,
           iosTarget: "select",
-          preLaunchTask: "process: xcodegenbuild",
+          preLaunchTask: "XcodeGen: Build using xcodebuild",
         },
       ],
     };

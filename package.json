@@ -17,11 +17,11 @@
     "commands": [
       {
         "command": "xcodegenbuilder.generate-project",
-        "title": "XcodeGen - Genereate project"
+        "title": "XcodeGen - Generate project"
       },
       {
         "command": "xcodegenbuilder.generate-launch",
-        "title": "XcodeGen - Genereate launch.json"
+        "title": "XcodeGen - Generate launch.json"
       }
     ]
   },

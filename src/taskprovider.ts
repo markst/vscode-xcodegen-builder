@@ -19,8 +19,8 @@ export class XCodeGenTaskProvider implements vscode.TaskProvider {
     return new vscode.Task(
       { type: "shell", task: "xcodegen" },
       vscode.TaskScope.Workspace,
-      `xcodegen for ${targetName}`,
-      "xcodegensource",
+      `Generate xcodeproj for ${targetName}`,
+      "XcodeGen",
       new vscode.ShellExecution(
         "npm",
         ["run", "xcodegen", "--", "-s", projectFilePath],
@@ -38,7 +38,7 @@ export class XCodeGenTaskProvider implements vscode.TaskProvider {
       { type: "shell", target: targetName },
       vscode.TaskScope.Workspace,
       "Clean build results",
-      "shell",
+      "XcodeGen",
       new vscode.ShellExecution(`rm -R -f ${resultBundlePath}`)
     );
   }
@@ -50,8 +50,8 @@ export class XCodeGenTaskProvider implements vscode.TaskProvider {
     const xcodebuildTask = new vscode.Task(
       { type: "process", target: targetName },
       vscode.TaskScope.Workspace,
-      "xcodegenbuild",
-      "process",
+      "Build using xcodebuild",
+      "XcodeGen",
       new vscode.ProcessExecution("xcodebuild", [
         "-scheme",
         targetName,
@@ -61,8 +61,6 @@ export class XCodeGenTaskProvider implements vscode.TaskProvider {
         "${command:ios-debug.targetSdk}",
         "-derivedDataPath",
         derivedDataPath,
-        "-clonedSourcePackagesDirPath",
-        "./Main/.build",
         "-allowProvisioningUpdates",
         "ARCHS=arm64",
       ])
